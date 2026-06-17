@@ -1,0 +1,102 @@
+.game-board {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.click-button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.click-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 70px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.click-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.6);
+}
+
+.click-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
+}
+
+.coin-emoji {
+  display: inline-block;
+  animation: bounce 0.6s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.multiplier-badge {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: #ff6b6b;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+}
+
+.shop-button,
+.leaderboard-button {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid #667eea;
+  background: rgba(102, 126, 234, 0.1);
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-button:hover,
+.leaderboard-button:hover {
+  background: rgba(102, 126, 234, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.shop-button:active,
+.leaderboard-button:active {
+  transform: translateY(0);
+}
