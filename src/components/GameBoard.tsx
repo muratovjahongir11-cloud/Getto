@@ -20,7 +20,7 @@ interface GameBoardProps {
   onShopClick: () => void
 }
 
-function GameBoard({ gameState, currentMultiplier, onClick, onShopClick }: GameBoardProps) {
+function GameBoard({ currentMultiplier, onClick, onShopClick }: GameBoardProps) {
   return (
     <div className="game-board">
       <div className="click-button-container">
